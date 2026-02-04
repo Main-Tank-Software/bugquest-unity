@@ -3,18 +3,18 @@ using UnityEngine;
 
 public class BugQuestAPI : MonoBehaviour
 {
-    public static bool StartVideoClip()
+    public static bool StartReplay(string replayLabel, int maxReplayDurationMinutes = int.MaxValue)
     {
-        return BugQuest.Instance.Video.StartManualClip();
+        return BugQuest.Instance.Video.StartReplay(replayLabel, maxReplayDurationMinutes);
     }
-    public static bool StopVideoClip()
+    public static bool StopReplay(bool discardReplay = false)
     {
-        return BugQuest.Instance.Video.StopManualClip();
+        return BugQuest.Instance.Video.StopReplay(discardReplay);
     }
 
-    public static bool IsVideoClipRecording()
+    public static bool IsReplayRecording()
     {
-        return BugQuest.Instance.Video.IsManualClipRecording();
+        return BugQuest.Instance.Video.IsReplayRecording();
     }
     public static void Disable()
     {
