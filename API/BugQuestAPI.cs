@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class BugQuestAPI : MonoBehaviour
 {
-    public static bool StartReplay(string replayLabel, int maxReplayDurationMinutes = int.MaxValue)
+    public static bool StartReplay(string replayLabel, bool discardReplayOnMaxDurationTimeout = false, int maxReplayDurationMinutes = int.MaxValue)
     {
-        return BugQuest.Instance.Video.StartReplay(replayLabel, maxReplayDurationMinutes);
+        return BugQuest.Instance.Video.StartReplay(replayLabel, discardReplayOnMaxDurationTimeout, maxReplayDurationMinutes);
     }
     public static bool StopReplay(bool discardReplay = false, string replaceLabel = null, int onlyKeepLastMinutes = int.MaxValue)
     {
