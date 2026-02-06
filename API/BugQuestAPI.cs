@@ -7,9 +7,9 @@ public class BugQuestAPI : MonoBehaviour
     {
         return BugQuest.Instance.Video.StartReplay(replayLabel, maxReplayDurationMinutes);
     }
-    public static bool StopReplay(bool discardReplay = false, string replaceLabel = null)
+    public static bool StopReplay(bool discardReplay = false, string replaceLabel = null, int onlyKeepLastMinutes = int.MaxValue)
     {
-        return BugQuest.Instance.Video.StopReplay(discardReplay, replaceLabel);
+        return BugQuest.Instance.Video.StopReplay(discardReplay, replaceLabel, onlyKeepLastMinutes);
     }
 
     public static bool IsReplayRecording()
