@@ -32,4 +32,12 @@ public class BugQuestAPI : MonoBehaviour
     {
         BugQuest.Disable();
     }
+
+    // Sends a user-submitted report (player feedback / bug report). The text is stored in the
+    // report message field; optional attachment files (e.g. a screenshot) are uploaded with it.
+    // The game is responsible for the UI that collects the text.
+    public static void SendUserReport(string text, string[] attachmentPaths = null)
+    {
+        BugQuest.SendUserReport(text, attachmentPaths);
+    }
 }
