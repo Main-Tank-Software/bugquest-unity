@@ -1,6 +1,6 @@
 {
   "name": "gg.bugquest.clientlib",
-  "version": "0.2.349",
+  "version": "0.2.350",
   "displayName": "BugQuest.GG",
   "description": "Easy Game Error Tracker for Unity",
   "unity": "2019.4",
