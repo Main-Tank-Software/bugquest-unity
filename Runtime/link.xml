@@ -1,0 +1,6 @@
+<linker>
+    <assembly fullname="BQ_shared">
+        <type fullname="BQ.Runtime.Shared.NativeCore.*" preserve="all" />
+        <type fullname="BQ.Native.BugQuestNative" preserve="all" />
+    </assembly>
+</linker>
